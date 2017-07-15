@@ -11,14 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+import Welcome from './app/components/Welcome';
 
 export default class myapp extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to My App!
-        </Text>
+        <Welcome welcome={styles.welcome}/>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 10
   },
   instructions: {
     textAlign: 'center',
